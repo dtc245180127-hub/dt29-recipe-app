@@ -93,6 +93,29 @@ services:
     networks:
       - recipe-net
 
+  loki:
+    image: grafana/loki:latest
+    container_name: recipe_loki
+    restart: always
+    ports:
+      - "3100:3100"
+    command: -config.file=/etc/loki/loki-config.yaml
+    volumes:
+      - ./loki/loki-config.yaml:/etc/loki/loki-config.yaml
+    networks:
+      - recipe-net
+
+  promtail:
+    image: grafana/promtail:latest
+    container_name: recipe_promtail
+    restart: always
+    volumes:
+      - ./promtail/promtail-config.yaml:/etc/promtail/promtail-config.yaml
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: -config.file=/etc/promtail/promtail-config.yaml
+    networks:
+      - recipe-net
+
 volumes:
   db_data:
 
