@@ -94,7 +94,7 @@ services:
       - recipe-net
 
   loki:
-    image: grafana/loki:latest
+    image: grafana/loki:2.9.2
     container_name: recipe_loki
     restart: always
     ports:

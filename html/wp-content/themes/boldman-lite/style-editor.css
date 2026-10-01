@@ -1,0 +1,20 @@
+/*
+ * Editor styles for Boldman Lite.
+ */
+.editor-styles-wrapper {
+	font-family: Poppins, sans-serif;
+	font-size: 15px;
+	line-height: 1.8;
+}
+
+.editor-styles-wrapper .wp-block {
+	max-width: 847px;
+}
+
+.editor-styles-wrapper .wp-block[data-align="wide"] {
+	max-width: 1200px;
+}
+
+.editor-styles-wrapper .wp-block[data-align="full"] {
+	max-width: none;
+}

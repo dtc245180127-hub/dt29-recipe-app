@@ -1,0 +1,247 @@
+.protheme-admin-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.protheme-wrap{
+   margin: 30px;
+}
+
+.protheme-container {
+    background-color: #ffffff;
+    border: 1px solid #dedede;
+    box-shadow: none;
+    -moz-box-shadow: 0px 0px 20px 0px rgb(10 4 33 / 10%);
+    margin-top: 5px;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+/* Card Design */
+.protheme-demo-item{
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    padding: 28px 8px 10px 5px;
+    box-shadow: 0px 0px 20px 0px #0A04211A;
+}
+
+/* Hover Effect */
+.protheme-demo-item:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+.protheme-container .protheme-wrap h2 {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+/* Image */
+.protheme-demo-thumb img{
+    width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 5px;
+    max-width: 100%;
+    border: 1px solid #E4E4E4;
+}
+
+.features_imgbox_style1 .protheme-demo-thumb:before{
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 10px;
+    background-repeat: no-repeat;
+    width: 39px;
+    height: 11px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 11;
+    float: left;
+}
+
+/* Title */
+.protheme-demo-title{
+    padding: 20px 15px 0 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #0b1b3f;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.features_imgbox_style1 .features_imgbox_content .protheme-demo-title a {
+    
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 1200px) {
+    .protheme-admin-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .protheme-admin-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .protheme-admin-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================
+   DEMO IMAGE HOVER BUTTONS
+========================================= */
+
+.protheme-demo-item .protheme-demo-thumb {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: hidden !important;
+    line-height: 0 !important;
+}
+
+.protheme-demo-item .protheme-demo-thumb .protheme-image-link {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 0 !important;
+}
+
+.protheme-demo-item .protheme-demo-thumb .protheme-image-link img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+/* Hover Overlay */
+
+.protheme-demo-item .protheme-demo-thumb .protheme-hover-box {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: row !important;
+    gap: 10px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    background: rgba(0, 0, 0, 0.65) !important;
+    z-index: 999 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: opacity 0.25s ease, visibility 0.25s ease !important;
+}
+
+.protheme-demo-item:hover .protheme-demo-thumb .protheme-hover-box {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Buttons */
+
+.protheme-demo-item .protheme-hover-box a {
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 116px !important;
+    min-width: 116px !important;
+    height: 42px !important;
+    margin: 0 !important;
+    padding: 0 15px !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    border-radius: 7px !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    z-index: 1000 !important;
+}
+
+/* WPBakery */
+
+.protheme-demo-item .protheme-hover-box .protheme-builder-wpbakery {
+    background: #ff9d24 !important;
+    color: #fff !important;
+}
+
+.protheme-demo-item .protheme-hover-box .protheme-builder-wpbakery:hover {
+    background: #f3941b !important;
+    color: #fff !important;
+}
+
+/* Elementor */
+
+.protheme-demo-item .protheme-hover-box .protheme-builder-elementor {
+    background: #fff !important;
+    color: #222 !important;
+}
+
+.protheme-demo-item .protheme-hover-box .protheme-builder-elementor:hover {
+    background: #eee !important;
+    color: #222 !important;
+}
+
+/* Remove Theme Link Effects */
+
+.protheme-demo-item .protheme-hover-box a:before,
+.protheme-demo-item .protheme-hover-box a:after {
+    display: none !important;
+    content: none !important;
+}
+
+.protheme-demo-item .protheme-hover-box a:hover,
+.protheme-demo-item .protheme-hover-box a:focus,
+.protheme-demo-item .protheme-hover-box a:active {
+    text-decoration: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Mobile */
+
+@media (max-width: 575px) {
+    .protheme-demo-item .protheme-hover-box {
+        gap: 6px !important;
+    }
+
+    .protheme-demo-item .protheme-hover-box a {
+        width: 100px !important;
+        min-width: 100px !important;
+        height: 38px !important;
+        font-size: 12px !important;
+    }
+}
